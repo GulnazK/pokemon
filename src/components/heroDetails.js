@@ -14,7 +14,7 @@ const HeroDetails = ({hero, setCurrent, pok}) => {
                 <Link to="/" style={{color: '#333'}} className="return mt-5 p-3 bg-primary text-white">Back</Link>
 
                 <div className="row">
-                    <div className="col-md-6 offset-2 mt-5">
+                    <div className="mx-auto mt-5">
                         <h1 className="text-warning mb-2">Pokemon Characters</h1>
                         <div className="card card_item mt-5">
                             <img src={pokemon?.img} alt="" style={{width: "180px"}}/>
