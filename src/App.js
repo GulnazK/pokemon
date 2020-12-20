@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import './App.css';
 import Header from "./components/header";
 import Home from './components/home'
-import About from './components/about';
 import HeroDetails from "./components/heroDetails";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import axios from "axios";
@@ -20,7 +19,6 @@ function App() {
 
             <Switch>
                 <Route exact path="/" component={() => <Home hero={hero}/>}/>
-                <Route exact path="/about" component={() => <About/>}/>
                 <Route exact path="/pokemon/:id" component={() => <HeroDetails hero={hero}/>}/>
             </Switch>
         </Router>

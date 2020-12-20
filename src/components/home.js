@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import {Link} from "react-router-dom";
 import Pagination from "./pagination";
 import VanillaTilt from "vanilla-tilt";
+import '../ball.png'
 
 const Home = ({hero}) => {
     const useHome = useRef()
@@ -22,7 +23,7 @@ const Home = ({hero}) => {
 
     return (
         <div className="container text-center">
-            <h1 className="text-warning mb-3">Pokemon Characters</h1>
+            <h1 className="text-warning mb-3">Find your pokemon</h1>
             <div className="mx-auto">
                 <input type="text" onChange={e => setSearch(e.target.value)} className=""
                        style={{width: "280px"}}   placeholder="Type to search..."/>
@@ -31,7 +32,7 @@ const Home = ({hero}) => {
 
                 {
                     filteredTasks.slice(currentPage * 15, (currentPage * 15) + 15).map(pok => (
-                        <div className='col-md-3 col-sm-4 mt-5' key={pok.id}>
+                        <div className='col-md-3 col-sm-4 mt-4 characters' key={pok.id}>
                             <img src={pok.img} alt=""/>
                             <div className="names">
                                 <h2>

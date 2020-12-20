@@ -1,3 +1,6 @@
+*{
+    font-family: 'Staatliches', sans-serif;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -6,28 +9,21 @@ nav {
     margin-bottom: 30px;
 }
 
-.logo {
+.pokemon-title {
     text-decoration: none;
 }
 
-.menu-item {
+.nav-title {
     margin-left: 15px;
     text-decoration: none;
 }
-.menu-item:hover{
-    background-color: #5e5f5c;
-    padding: 5px;
-}
-
 .pokemon {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
 }
 
 .card_item {
     width: 380px;
     height: 400px;
-
 }
 .return{
     text-decoration: none;
@@ -35,4 +31,11 @@ nav {
 .search{
     padding: 0 10px;
 }
+.page-link{
+    color: #ffc107;
+}
+.characters{
+    border: 2px solid #0d6efd;
+    border-radius: 20px;
 
+}

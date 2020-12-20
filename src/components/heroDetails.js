@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams} from 'react-router-dom'
 import {Link} from "react-router-dom";
+import './heroDetails.css'
 
 
 const HeroDetails = ({hero, setCurrent, pok}) => {
@@ -11,12 +12,12 @@ const HeroDetails = ({hero, setCurrent, pok}) => {
     }
     return (
             <div className="container">
-                <Link to="/" style={{color: '#333'}} className="return mt-5 p-3 bg-primary text-white">Back</Link>
+                <Link to="/" style={{color: '#333'}} className="return mt-5 p-3 bg-warning text-white">Back</Link>
 
-                <div className="row">
-                    <div className="mx-auto mt-5">
-                        <h1 className="text-warning mb-2">Pokemon Characters</h1>
-                        <div className="card card_item mt-5">
+                <div className="row d-flex">
+                    <div className="mx-auto mt-5 ">
+                        <h1 className="text-danger mb-3">Pokemon Characters</h1>
+                        <div className="card card_item mt-5 align-items-center">
                             <img src={pokemon?.img} alt="" style={{width: "180px"}}/>
                             <div className="card-body">
                                 <h5 className="card-title">{pokemon?.name}</h5>

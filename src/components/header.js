@@ -4,14 +4,13 @@ import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header className="p-3 mb-5 bg-info">
+        <header className="p-1 mb-5 bg-danger">
 
             <div className="container">
-                <nav className="mt-3">
-                    <Link to="/" className="logo text-white">PokeApi</Link>
+                <nav className="header-box mt-4">
+                    <Link to="/" className="pokemon-title text-white">POKEMON</Link>
                     <div className="top-menu">
-                        <Link className="menu-item text-white" to="/">Home</Link>
-                        <Link className="menu-item text-white" to="/about">About</Link>
+                        <Link className="nav-title text-white" to="/">Home</Link>
                     </div>
                 </nav>
             </div>
